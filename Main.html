@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        #delete{
+            position:absolute;
+            top:110px;
+            left:60px;
+        }
+        #select{
+            position:absolute;
+            top:150px;
+            left:60px;
+        }
+        #insert{
+            position:absolute;
+            top:70px;
+            left:60px;
+        }
+        h1{
+            padding-left: 460px;
+            padding-top: 80px;
+        }
+        .btns{
+            position: absolute;
+            top:25%;
+            left:30%;
+        }
+    </style>
+    <body>
+        <h1>PHP Test</h1>
+        <div class="btns">
+        <form id="insert" action="insert.php" method="post">
+                <input type="submit" class="btn btn-primary" style="width:350px" value="Insert">
+        </form>
+        <form id="delete" action="delete.php" method="post">
+                <input type="submit" class="btn btn-danger" style="width:350px" value="Delete">
+        </form>
+        <form id="select" action="select.php" method="post">
+                <input type="submit" class="btn btn-success" style="width:350px" value="Display">
+        </form>
+        </div>
+    </body>
+</html>
